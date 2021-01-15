@@ -41,6 +41,11 @@ public class CmsApplication extends SpringBootServletInitializer {
         return "grids";
     }
 
+    @RequestMapping(value = "/profile")
+    public String profile(){
+        return "profile";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(CmsApplication.class, args);
     }
