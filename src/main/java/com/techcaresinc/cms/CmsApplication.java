@@ -50,6 +50,27 @@ public class CmsApplication extends SpringBootServletInitializer {
     public String login(){
         return "login";
     }
+
+    @RequestMapping(value = "/widgets")
+    public String widgets(){
+        return "widgets";
+    }
+
+    @RequestMapping(value = "/chart-chartjs")
+    public String chart_chartjs(){
+        return "chart-chartjs";
+    }
+
+    @RequestMapping(value = "/basic_table")
+    public String basic_table(){
+        return "basic_table";
+    }
+
+    @RequestMapping(value = "/contact")
+    public String contact(){
+        return "contact";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(CmsApplication.class, args);
     }
@@ -57,7 +78,6 @@ public class CmsApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(CmsApplication.class);
-
     }
 
 }
