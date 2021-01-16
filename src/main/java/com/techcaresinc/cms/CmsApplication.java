@@ -46,6 +46,10 @@ public class CmsApplication extends SpringBootServletInitializer {
         return "profile";
     }
 
+    @RequestMapping(value = "/login")
+    public String login(){
+        return "login";
+    }
     public static void main(String[] args) {
         SpringApplication.run(CmsApplication.class, args);
     }
