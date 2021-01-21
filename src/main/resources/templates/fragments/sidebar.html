@@ -18,7 +18,9 @@
   <!--external css-->
   <!-- font icon -->
   <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+        th:href="@{/webjars/font-awesome/5.15.2/css/fontawesome.min.css}">
+
   <!-- full calendar css-->
   <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
   <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
@@ -53,13 +55,28 @@
         <ul class="sidebar-menu">
           <li class="active">
             <a class="" th:href="@{/}">
-                          <i class="icon_house_alt"></i>
+                          <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
           </li>
+
+          <li class="sub-menu">
+            <a class="" th:href="@{/}">
+              <i class="fa fa-barcode"></i>
+              <span>Asset</span>
+            </a>
+          </li>
+
+          <li class="sub-menu">
+            <a class="" th:href="@{/}">
+              <i class="fa fa-certificate"></i>
+              <span>Licences</span>
+            </a>
+          </li>
+
           <li class="sub-menu">
             <a href="javascript:;" class="">
-                          <i class="icon_document_alt"></i>
+                          <i class="fa fa-save"></i>
                           <span>Forms</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
