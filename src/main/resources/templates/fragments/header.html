@@ -53,7 +53,9 @@
       </div>
 
       <!--logo start-->
-      <a th:href="@{/}" class="logo">Tech Set MS</a>
+      <a th:href="@{/}" class="logo">
+          <img src="https://avatars.githubusercontent.com/u/52626265?s=60&v=4"
+               height="25"> Tech Set MS</a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -68,11 +70,48 @@
         <!--  search form end -->
       </div>
 
-      <div class="top-nav notification-row">
+      <div class="top-nav">
+
         <!-- notificatoin dropdown start-->
         <ul class="nav pull-right top-menu">
 
-          <!-- task notificatoin start -->
+            <!-- create new dropdown start-->
+<!--            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <i class="fa fa-folder-open"></i>
+                    <span class="">Create New</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu extended logout">
+                    <div class="log-arrow-up"></div>
+                    <li class="eborder-top">
+                        <a th:href="@{/#}"><i class="fa fa-barcode"></i>Asset</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-certificate"></i>License</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-keyboard-o"></i>Accessory</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-building-o"></i>Component</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-user"></i>User</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </li>-->
+            <!--  create new dropdown end -->
+<!--                add new asset start
+            <li class="top-nav">
+                <a th:href="@{/}" class="fa fa-barcode">
+                </a>
+            </li>
+                add new asset end       -->
+
+  <!--         task notificatoin start
           <li id="task_notificatoin_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-task-l"></i>
@@ -156,8 +195,9 @@
               </li>
             </ul>
           </li>
-          <!-- task notificatoin end -->
-          <!-- inbox notificatoin start-->
+           task notificatoin end
+
+           inbox notificatoin start
           <li id="mail_notificatoin_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-envelope-l"></i>
@@ -221,8 +261,9 @@
               </li>
             </ul>
           </li>
-          <!-- inbox notificatoin end -->
-          <!-- alert notification start-->
+           inbox notificatoin end
+
+           alert notification start
           <li id="alert_notificatoin_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
@@ -267,7 +308,8 @@
               </li>
             </ul>
           </li>
-          <!-- alert notification end-->
+           alert notification end-->
+
           <!-- user login dropdown start-->
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">

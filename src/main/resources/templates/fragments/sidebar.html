@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,16 +61,43 @@
           </li>
 
           <li class="sub-menu">
-            <a class="" th:href="@{/}">
+            <a href="javascript:;" class="">
+              <i class="fa fa-folder-open"></i>
+              <span>Create New</span>
+              <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <ul class="sub">
+                <li><a th:href="@{/#}"><i class="fa fa-barcode"></i>Asset</a></li>
+                <li><a href="#"><i class="fa fa-certificate"></i>License</a></li>
+                <li><a href="#"><i class="fa fa-keyboard-o"></i>Accessory</a></li>
+                <li><a href="#"><i class="fa fa-building-o"></i>Component</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a th:href="@{/#}">
               <i class="fa fa-barcode"></i>
-              <span>Asset</span>
+              <span>Assets</span>
             </a>
           </li>
 
           <li class="sub-menu">
-            <a class="" th:href="@{/}">
+            <a href="#">
               <i class="fa fa-certificate"></i>
-              <span>Licences</span>
+              <span>  Licenses</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="#">
+              <i class="fa fa-keyboard-o"></i>
+            <span>Accessories</span>
+             </a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#">
+              <i class="fa fa-building-o"></i>
+              <span>Components</span>
             </a>
           </li>
 
@@ -85,12 +112,13 @@
               <li><a class="" th:href="@{/form_validation}">Form Validation</a></li>
             </ul>
           </li>
+
           <li class="sub-menu">
             <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>UI Fitures</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
+              <i class="icon_desktop"></i>
+              <span>UI Fitures</span>
+              <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
             <ul class="sub">
               <li><a class="" th:href="@{/general}">Elements</a></li>
               <li><a class="" th:href="@{/buttons}">Buttons</a></li>
@@ -109,20 +137,30 @@
                           <span>Charts</span>
 
                       </a>
-
           </li>
 
           <li class="sub-menu">
             <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>Tables</span>
+                          <i class="fa fa-bar-chart-o"></i>
+                          <span>Reports</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
               <li><a class="" th:href="@{/basic_table}">Basic Table</a></li>
             </ul>
           </li>
-
+          <li class="sub-menu">
+            <a href="javascript:;" class="">
+              <i class="fa fa-users"></i>
+              <span>Users</span>
+              <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <ul class="sub">
+              <li><a class="" th:href="@{/general}">Elements</a></li>
+              <li><a class="" th:href="@{/buttons}">Buttons</a></li>
+              <li><a class="" th:href="@{/grids}">Grids</a></li>
+            </ul>
+          </li>
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_documents_alt"></i>
