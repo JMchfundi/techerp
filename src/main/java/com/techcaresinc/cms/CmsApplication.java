@@ -16,6 +16,10 @@ public class CmsApplication extends SpringBootServletInitializer {
         return "index";
     }
 
+    @RequestMapping(value = "/financials")
+    public String financials(){
+        return "financials";
+    }
     @RequestMapping(value = "/form_component")
     public String form_component(){
         return "form_component";
